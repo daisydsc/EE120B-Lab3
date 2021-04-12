@@ -28,7 +28,12 @@ int main(void) {
 	count = 0;
 	
 	for(unsigned char i = 0; i < 8; ++i) {
-		if
+		if((tmpA >> i) & 0x01) {
+			count = count + 1;
+		}
+		if((tmpB >> i) & 0x01) {
+			count = count + 1;
+		}
 	PORTC = count;
     }
     return 1;
