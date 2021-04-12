@@ -1,6 +1,6 @@
 /*	Author: Daisy Cheng dchen213@ucr.edu
  *	Lab Section:021
- *	Assignment: Lab # 3 Exercise # 5
+ *	Assignment: Lab # 3 Exercise # 4
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
@@ -17,14 +17,16 @@ int main(void) {
 	DDRB = 0xFE; PORTB = 0x01;
  
   	unsigned char weight = 0x00;
+	unsigned char heavyweight = 0x00;
 	unsigned char tempB = 0x00;
 	unsigned char tempBout = 0x00;
     	while(1){
+		heavyweight = (PIND >> 7) & 0x01;
 		tempBout = 0x00;
 		tempB = PINB & 0x01;
 		weight = ((PIND << 1) & 0xFE) + tempB;
 
-		if(weight >= 70){
+		if((heavyweight) || (weight >= 70)){
 			tempBout += 0x02;
 		}
 		else if (weight > 5) {
