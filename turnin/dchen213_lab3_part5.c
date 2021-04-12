@@ -1,6 +1,6 @@
 /*	Author: Daisy Cheng dchen213@ucr.edu
  *	Lab Section:021
- *	Assignment: Lab # 3 Exercise # 4
+ *	Assignment: Lab # 3 Exercise # 5
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
